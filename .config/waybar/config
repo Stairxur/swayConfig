@@ -23,7 +23,7 @@
 	},
 
 
-	"hyprland/window": {
+	"sway/window": {
 		"format": "{class}",
 		"separate-outputs": false,
 },
