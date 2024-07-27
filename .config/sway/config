@@ -4,7 +4,7 @@
 #
 # Read `man 5 sway` for a complete reference.
 
-#exec telegram-desktop -startintray
+exec telegram-desktop -startintray
 #exec autotiling
 exec waybar -c ~/.config/waybar/config -s ~/.config/waybar/style.css
 
@@ -241,13 +241,12 @@ input * xkb_numlock enabled
 
 #
 bindsym --to-code $mod+F1 exec firefox
-bindsym --to-code $mod+F11 exec steam
+bindsym --to-code $mod+F11 exec telegram-desktop
 bindsym --to-code $mod+F12 exec transmission-gtk
-bindsym --to-code $mod+d exec $menu
 
 #	
 bindsym --to-code $mod+Insert exec reboot
-#bindsym --to-code $mod+Escape exec poweroff
+bindsym --to-code $mod+Escape exec poweroff
 
 #
 bindsym Print exec grim ~/Pictures/Screenshots/screen-"$(date +%s)".png
