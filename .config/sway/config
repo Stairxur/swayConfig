@@ -23,7 +23,7 @@ for_window [floating] border none
 
 #
 assign [app_id="firefox"] workspace 1
-assign [app_id="Blender"] workspace 2
+assign [app_id="transmission"] workspace 3
 
 #
 for_window [app_id="org.telegram.desktop"] floating enable
@@ -251,6 +251,9 @@ bindsym --to-code $mod+F1 exec firefox
 bindsym --to-code $mod+F11 exec telegram-desktop
 bindsym --to-code $mod+F12 exec transmission-gtk
 
+#
+bindsym Pause exec firefox --private-window
+
 #	
 bindsym --to-code $mod+Insert exec reboot
 bindsym --to-code $mod+Escape exec poweroff
@@ -258,9 +261,11 @@ bindsym --to-code $mod+Escape exec poweroff
 #
 bindsym Print exec grim ~/Pictures/Screenshots/screen-"$(date +%s)".png
 bindsym $mod+Print exec grim -g "$(slurp)" ~/Pictures/Screenshots/screen-"$(date +%s)".png
-    
+
+#
 bindsym Home exec udiskie-mount /dev/sdb1
-bindsym End exec udiskie-umount /dev/sdb1 --force --detach
+bindsym End exec udiskie-umount /dev/sdb1
+bindsym $mod+End exec udiskie-umount /dev/sdb1 --force --detach
 
 #
 # Status Bar:
