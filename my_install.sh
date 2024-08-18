@@ -1,7 +1,7 @@
 #!/bin/bash
 
 echo "Installing programs..."
-sudo pacman -S sway swaybg waybar xorg xorg-xinit firefox neovim alacritty mc btop cmake smplayer cmus wofi evince transmission-gtk numlockx udiskie pamixer grim slurp zip unzip
+sudo pacman -S sway swaybg waybar xorg xorg-xinit firefox neovim blender krita alacritty mc btop cmake smplayer cmus wofi evince transmission-gtk numlockx udiskie pamixer grim slurp zip unzip
 
 echo "Installing fonts..."
 sudo pacman -S ttf-liberation ttf-dejavu opendesktop-fonts ttf-bitstream-vera ttf-arphic-ukai ttf-arphic-uming ttf-hanazono ttf-jetbrains-mono-nerd
