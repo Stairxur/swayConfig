@@ -257,7 +257,7 @@ bindsym Pause exec firefox --private-window
 
 #	
 bindsym --to-code $mod+Insert exec reboot
-bindsym --to-code $mod+Escape exec poweroff
+#bindsym --to-code $mod+Escape exec poweroff
 
 #
 bindsym Print exec grim ~/Pictures/Screenshots/screen-"$(date +%s)".png
